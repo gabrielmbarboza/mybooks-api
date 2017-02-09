@@ -32,6 +32,6 @@ class AuthorsController < Sinatra::Base
 
   delete '/authors/:id' do
     @author = Author.find params[:id]
-    @author.delete if @author
+    @author.delete
   end
 end
